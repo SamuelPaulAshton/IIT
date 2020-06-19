@@ -1,10 +1,10 @@
 
 
 html, body {
-    background: #0B132B;
+    background: #181D27;
     font-family: 'Lato', helvetica, arial, sans-serif;
     font-size: 16px;
-    color: #50AAA9; 
+    color: #254D32; 
 }
 
 .clear {
@@ -16,15 +16,15 @@ html, body {
 }
 #one:checked ~ .panels #mainPanel,
 #two:checked ~ .panels #idealJob,
-#three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel{
+#three:checked ~ .panels #personalProfile,
+#four:checked ~ .panels #projectIdea{
     display:block
 }
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
 #four:checked ~ .tabs #four-tab{
-    background:#fffffff6;
+    background:#3A7D44;
     color:#000;
     border-top: 3px solid #000;
 }
@@ -33,15 +33,15 @@ html, body {
     cursor: pointer;
     padding:10px 20px;
     margin:0px 2px;
-    background:#000;
+    background:#D0DB97;
     display:inline-block;
-    color:#fff;
+    color:#000;
     border-radius:3px 3px 0px 0px;
     box-shadow: 0 0.5rem 0.8rem #00000080;
 }
 
 .panels{
-    background:#3A506B;
+    background:#D0DB97;
     box-shadow: 0 2rem 2rem #00000080;
     min-height:200px;
     width:100%;
@@ -61,7 +61,7 @@ p {
     font-size: 1em;
     line-height: 1.4em;
     margin-bottom: 20px;
-    color: #709CD1;
+    color: #181D27;
 }
 
 #cv {
@@ -70,9 +70,17 @@ p {
     align-items: center;
     width: 90%;
     max-width: 800px;
-    /*background: #1C2541;*/
+    background: #181D27;
     margin: 30px auto;
 }
+
+#staticInfo {
+    background:#3A7D44;
+    width:100%;
+    max-width:750px;
+    padding:20px;  
+}
+
 
 .mainDetails {
     padding: 25px 35px;
@@ -106,7 +114,7 @@ p {
 }
 
 section {
-    border-top: 1px solid #5BC0BE;
+    border-top: 1px solid #254D32;
     padding: 20px 0 0;
 }
 
@@ -123,7 +131,7 @@ section:last-child {
 }
 
 .sectionContent img {
-    border: 2px solid #50AAA9
+    border: 2px solid #254D32
 }
 
 .sectionTitle {
@@ -135,6 +143,14 @@ section:last-child {
     float: right;
     width: 73%;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+  }
 
 /*
 .sectionContent{
