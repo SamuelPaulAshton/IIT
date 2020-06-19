@@ -11,6 +11,52 @@ html, body {
     clear: both;
 }
 
+.radio{
+    display:none;
+}
+#one:checked ~ .panels #mainPanel,
+#two:checked ~ .panels #idealJob,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel{
+    display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #000;
+}
+
+.tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#000;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+.panels{
+    background:#3A506B;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:750px;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+}
+
+.panel{
+    display:none;
+    animation: fadein .8s;
+}
+
+
 p {
     font-size: 1em;
     line-height: 1.4em;
@@ -19,9 +65,12 @@ p {
 }
 
 #cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     max-width: 800px;
-    background: #1C2541;
+    /*background: #1C2541;*/
     margin: 30px auto;
 }
 
@@ -29,6 +78,14 @@ p {
     padding: 25px 35px;
     border-bottom:2px solid #5BC0BE;
     background: #3A506B;
+}
+
+#headshot {
+    float: right;
+}
+
+#name {
+    float: left;
 }
 
 #name h1 {
@@ -42,6 +99,10 @@ p {
     font-size: 2em;
     margin-left: 2px;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#contactDetails {
+    float: left;
 }
 
 section {
